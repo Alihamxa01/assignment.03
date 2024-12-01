@@ -1,118 +1,81 @@
+import React from 'react';
+import Header from './components/Header/Header';
+import Footer from './components/footer/footer';
+import Hero from  './components/Heroo/Heroo'
+import Category from './components/Category/Category';
+import Achivement from './components/achivement/achivement';
+import Course from './components/Course/Course';
+import Team from './components/Team/Team';
 
-import React from 'react'
-import Header from './components/Header/Header'
-import Footer from './components/footer/footer'
-import Image from 'next/image'
-
-
-
-export default function Page() {
+const web = () => {
   return (
-    <div className=" bg-gray-900 text-white">
-      <Header />
-
-      {/* Main Title Section */}
-      <section className="flex flex-col  justify-center h-screen bg-green-500 text-center  duration-300 ease-in-out hover:bg-green-600">
-        <h1  className="text-8xl font-extrabold  drop-shadow-xl animate-bounce">
-          HEY, IAM ALI HAMZA
-        </h1>
-        <span className="text-4xl mt-2">FRONT-END DEVELOPER</span>
-      
-      </section>
+    <div>
+    <Header/>
 
 
-      {/* Divider */}
-      <div className="border-t-4 border-green-400 my-10  "></div>
+{/* Navbar */}
+    <div className="bg-[#F7F7F7]  text-black mt-2  border-b-2 border-gray-300 h-[72px] scroll-smooth ">
+
+      <div className="flex items-center justify-between px-6 py-4 md:px-10">
+
+        <div className="flex items-center gap-2">
+          <div className="w-[32px] h-[32px] flex items-center">
+
+          </div>
+          <h1 className="text-xl font-bold font-inter">Ddsgnr</h1>
+        </div>
+
+ 
+        <div className="hidden md:flex items-center justify-between w-full bg-white ml-40 ">
+          <ul className="flex gap-16 ml-auto">
+            <li> <a href="#" className="hover:text-gray-700 hover:underline hover:underline-offset-8 ">
+                Home   </a>
+      </li> <li> 
 
 
-      {/* About Me Section */}
-      <section id="about me"  className=" bg-teal-900   text-center border-b-2 border-t-2 h-96" >
-        <h2 className="text-6xl font-black mb-4">
-          <span className="text-9xl text-green-400">A</span>BOUT <span className="text-white">ME</span>
-        </h2>
-         
-        <p className="text-xl font-medium leading-relaxed mx-auto border-l-4 border-green-400 pl-4 p-7">
-          I am <span className="text-1xl text-green-400 font-semibold">Ali Hamza</span>, a new developer who knows HTML, CSS, TypeScript, 
-          Nextjs and Tailwind css . Iam still learning and getting better at building websites. Right now, Iam enrolled in a course at Government
-           House, where I&apos;m learning more skills to improve my work. I enjoy working on creative projects and love exploring new ways to make my
-            websites better and more responsive.
-        </p>
-      </section>
 
-
-      <div className="border-t-4 border-green-400 my-10  "></div>
-
-      {/* privous work Section */}
-      <section id="project" className="px-6 py-10 bg-teal-900 rounded-lg shadow-2xl text-center border-b-2 border-t-2">
-  <h2 className="text-6xl font-black mb-4">
-    <span className="text-9xl text-green-400">MY</span>PROJECTS <span className="text-white"></span>
-  </h2>
-  <div className="border-t-4 border-green-400 my-10"></div>
-
-  <div className="flex flex-wrap justify-between items-start">
-
-    {/* RESUME BUILDER (Left) */}
-    <div className="w-full lg:w-1/2 bg-transparent text-center pt-4 px-6">
-      <h1 className="text-4xl font-mono font-bold items-center text-green-500">
-        <span className="text-8xl">D</span>YNAMIC RESUME BUILDER
-      </h1>
-      {/* image1 */}
-      <div className="max-w-xl hover:scale-105 hover:shadow-green-400 shadow-lg hover:bg-teal-800 duration-200 pt-3 mt-5 rounded-lg">
-        <a>
-          <Image src="/img2.jpg" alt="photo" height="300" width="300" className="mx-auto mt-5 shadow-lg bg-transparent hover:bg-teal-800 hover:shadow-lg hover:shadow-green-400 duration-200 rounded-lg" />
-        </a>
-        {/* para 1*/}
-        <p className="text-xl font-medium mt-4 text-white pb-6 px-6">
-          This is a dynamic resume builder website where you can fill in your information, and a resume will be generated for you. You can also edit the resume later as needed.<br /><br />
-          Here is the link: <a href="https://sparkling-panda-2ec022.netlify.app/" target="_blank" className="text-blue-200 hover:text-green-400">you can try this!</a>
-        </p>
-      </div>
-    </div>
-
-    {/* MUSIC PLAYER (Right) */}
-    <div className="w-full lg:w-1/2 bg-transparent text-center pt-4 px-6">
-      <h1 className="text-4xl font-mono font-bold text-center text-green-500">
-        <span className="text-8xl">MR</span>FOODIE
-      </h1>
-      {/* img2 */}
-      <div className="max-w-xl hover:scale-105 hover:shadow-green-400 shadow-lg hover:bg-teal-800 duration-200 pt-3 mt-5 rounded-lg">
-        <a>
-          <Image src="/img4.jpg" alt="photo" height="300" width="300" className="mx-auto mt-5 shadow-lg bg-transparent hover:bg-teal-800 hover:shadow-lg hover:shadow-green-400 duration-200 rounded-lg" />
-        </a>
-        {/* para 2 */}
-        <p className="text-xl font-medium pb-3 mt-4 text-white px-6">
-        I created a website named Mr. Foodie to showcase my skills, featuring a menu bar, header, footer, and a hero section with food images. It also includes a fast food menu.
-
-
-</p>
-        <br /> Here is the link: <a href="https://foodie-com-website2.vercel.app/" target="_blank" className="text-blue-200 hover:text-green-400 hover:text-l">you can try this!</a>
-      </div>
-    </div>
-
-  </div>
-</section>
-<div className="border-t-4 border-green-400 my-10 border-b-2 "></div>
-
-{/* service */}
-
-
-<section id="service"  className=" bg-teal-900   text-center border-b-2 border-t-2 h-96" >
-        <h2 className="text-6xl font-black mb-4">
-          <span className="text-9xl text-green-400">S</span>ERVICE
-        </h2>
-         
-        <p className="text-xl font-medium leading-relaxed mx-auto border-l-4 border-green-400 pl-4 p-7">
-        I am a web developer and designer, and I provide these services to help your business grow online. I create websites that look good and work well on all devices. I design logos that match your business style. I make sure your website is easy to find on search engines, and I offer support to keep your website updated and running smoothly.
-        </p>
-
-      </section>
-
-  {/* Divider */}
-  <div className="border-t-4 border-green-400 my-10 border-b-2 "></div>
-<Footer></Footer>
+        <a href="#1"  className="hover:text-gray-700 hover:underline hover:underline-offset-8">
+       Courses   </a>
+       
+       
+       
+       </li>
+  <li><a href="#2" className="hover:text-gray-700 hover:underline hover:underline-offset-8 ">
+     Services </a>
+            </li>
+   <li>
+              <a href="#3" target="_self" className="hover:text-gray-700 hover:underline hover:underline-offset-8">
+                Achievement  </a>
+            </li>
+            <li>   <a href="#4" className="hover:text-gray-700 hover:underline hover:underline-offset-8">
+            About Us
+          </a>
+  </li>     <li>
+              <a href="#5" className="hover:text-gray-700 hover:underline hover:underline-offset-8">
+             Testimonial  </a>
+            </li>  </ul>
+          <div className="flex gap-4 ml-6">
+          <button className="px-4 py-2   text-gray-900 border border-gray-400 rounded hover:bg-gray-600">
+              Login
+      </button>
+            <button className="px-4 py-2 bg-black text-white rounded">
+        Sign Up
+            </button>
    </div>
-  )
-}
+        </div>
+     </div>
+    </div>
+  {/* Hero */}
+<Hero/>
+<Category/>
+<Achivement/>
+<Course/>
+<Team/>
 
+    <Footer/>
 
+    </div>
+  );
+};
 
+export default web;
