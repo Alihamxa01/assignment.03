@@ -1,100 +1,46 @@
 import React from 'react';
-import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from 'react-icons/fa';
-
-
-
-export default function footer() {
+import { FaLinkedin } from 'react-icons/fa';
+export default function Footer() {
   return (
-    <footer id="4" className="bg-white border-t border-gray-400 py-8  scroll-smooth  px-4 md:px-16">
-    {/* Newsletter Section */}
-    <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-6">
-      <div>
-        <h2 className="text-[18px] font-bold ml-2 text-[#000000]">
-          Subscribe to our newsletter</h2>
-        <p className="text-[16px] text-black mt-0 ml-2">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-      </div>
-
-      <div className="max-w-6xl mx-auto mt-4 ">
-        <form className="flex items-center justify-start gap-8 pl-36">
-          <input
-            type="email"    placeholder="Enter your E-mail"  className="flex-auto px-4 py-2 border border-black text-[#505050] rounded-md text-sm "
-          />
-          <button
-            type="submit" className="px-5  py-2 text-sm border border-black hover:bg-black hover:text-white duration-200 ease-in-out text-[#505050] rounded-[5px]" >
-            Subscribe</button>
-        </form>
-
-        <p className="text-[14px] text-black mt-4 pl-36">
-          By subscribing, you agree to our <a href="#" className="underline">Privacy Policy</a>.</p>
-      </div>
-    </div>
-
-    {/* Link */}
-    <div className="max-w-9xl mx-auto mt-4 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 py-9 ">
-      <div className="flex items-center space-x-10 pt-5 pb-5">
-  
+    <div className="bg-gradient-to-bl to-gray-900 from-zinc-900 p-3 mt-4 text-white text-center border-t-2">
+      <h1 className="text-lg font-bold pt-5">
+        &copy; 2024 || A Creation By Ali Hamza
+      </h1>
+      <p className="text-sm mt-1 mb-20">
+        Developing the future, one website at a time.
+      </p>
+       <section id='overview' className="text-left border-t-2">
+        <h2 className="text-4xl font-black mb-4 pl-5 pb-2">
+          <span className="text-9xl text-green-400">A</span>BOUT <span className="text-white">US</span>
+        </h2>
+        <p className="text-xl font-medium  mx-auto border-l-4 border-green-400 p-3">
+          Welcome to my <span className='text-1xl text-green-400 font-semibold'>PORTFOLIO</span> website! This platform showcases my skills and projects as a developer.<br/> Here, you'll find a collection of my work, including web development projects and design creations, <br/>highlighting my journey and expertise in the field.
+        </p>
+       
     
-        <h3 className="text-xl font-bold ml-5 mb-36 text-black">Ddsgnr</h3>
-      </div>
-
-      <div>
-        <h4 className="text-lg font-black text-black">Courses</h4>
-     <ul className="mt-4 space-y-2 text-black text-sm">
-     <li>Business</li>
-     <li>Development</li>
-        <li>Technology</li>
-    <li>Design</li>
-       <li>Programming</li>
-    </ul>
-      </div>
-    <div>
-        <h4 className="text-lg font-black text-black">Resources</h4>
-   <ul className="mt-4 space-y-2 text-black text-sm">
-      <li>Career</li>
-   <li>Resume</li>
-     <li>Learning</li>
-  <li>Interview Preparation</li>
-          <li>Jobs</li>
-        </ul>
-      </div>
-      <div>
-        <h4 className="text-lg font-black text-black">About Us</h4>
-        <ul className="mt-4 space-y-2 text-black text-sm">
-      <li>Contact</li>
-     <li>Help/Support</li>
-        <li>FAQ</li>
-<li>Terms and Conditions</li>
-       <li>Partners</li>
-        </ul>
+      </section>
+<section>
+  <h1 className='text-green-400 text-3xl font-black   text-right mr-10 mt-36'>FOR CONTACT</h1>
+  <p className='text-lg text-right m-7'>  If you have any questions, feel free to contact me.<br/> I'm always open to work and new ideas. You can email me at: 
+  </p> 
+  
+  
+  <h1 className='pr-7 text-lg mt-2  font-thin text-end'>
+  hamza.nadeem.0106@gmail.com 
+  </h1>
+  
+</section> 
+      {/* Footer Bottom */}
+      <div className="mt-8 text-center text-sm text-gray-500 border-t border-gray-700 pt-4 border-dashed">
+        Powered by Ali Hamza | All rights reserved.
+        {/* LinkedIn Section with separate "Connect with me" text */}
+        <div className="flex justify-start mt-2">
+          <span className="text-white font-medium mr-2">Connect with me</span>
+          <a href='https://www.linkedin.com/in/ali-hamza-nadeem-479b42292?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' target="_blank" className="hover:text-blue-500">
+            <FaLinkedin className='text-blue-700 size-8 hover:text-blue-500 duration-75 hover:size-10' />
+          </a>
+        </div>
       </div>
     </div>
-
-   
-    <hr className="border-t border-gray-500 my-8 " />
-
-
-    <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-[#000000] text-sm  lg:pb-36 ">
-    <p>© 2023 Ddsgnr. All rights reserved.</p>
-      <div className="flex space-x-10 mt-2 md:mt-0">
-        <a href="#" className="hover:underline">Privacy Policy</a>  <a href="#" className="hover:underline">Terms of Service</a>  <a href="#" className="hover:underline">Cookies Settings</a>
-      </div>
-      <div className="flex space-x-4 mt-4 md:mt-0">
-        <a
-          href="#" className="text-black"
-        > <FaFacebook size={25} />
-        </a> <a
-          href="#"className="text-black"
-        >  <FaInstagram size={25} />
-        </a>  <a
-href="#" className="text-black">
-          <FaTwitter size={25} />
-        </a> <a
-          href="#" className="text-black"
-        > <FaLinkedin size={25} /> </a>
-      </div>
-      
-    </div>
-  </footer>
-  )
+  );
 }

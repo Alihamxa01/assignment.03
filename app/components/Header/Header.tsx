@@ -1,58 +1,18 @@
-
-
 import React from 'react'
-import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from 'react-icons/fa';
-
 export default function Header() {
   return (
-
-
-
-
-    
-    <div className="h-[54px] bg-[#F7F7F7] hidden sm:flex justify-between px-6 py-4 gap-8 lg:px-10">
-      {/* Contact Information */}
-      <div className="text-sm flex gap-8 flex-wrap w-full sm:w-auto text-center lg:text-left text-black">
-        <p>
-          Phone Number: <span className="font-medium">956 742 455 678</span>
-        </p>
-        <p>
-          Email: <span className="font-serif">info@ddsgnr.com</span>
-        </p>
+    <div className="bg-gray-800 p-3  border-b-8 border-green-900">
+      <h1 className="bg-gradient-to-r from-green-400 to-teal-700 p-4 text-4xl font-extrabold text-white text-center border-4 border-white rounded-lg shadow-xl  hover:border-teal-100">
+      Crafting Modern Digital Experiences        
+      </h1>
+      <div>
+        <nav className='text-center mt-5  '>
+          <a href='#overview' className='hover:text-green-300 font-bold p-5  hover:text-lg duration-75'>OVERVIEW</a>
+          <a href='#project' className='hover:text-green-300 font-bold  p-5 hover:text-lg duration-75'>PROJECTS</a>
+          <a href='#about me' className='hover:text-green-300 font-bold  p-5 hover:text-lg duration-75'>ABOUT ME</a>
+          <a href='#service' className='hover:text-green-300 font-bold  p-5 hover:text-lg duration-75'>SERVICES</a>
+        </nav>
       </div>
-
-      {/* Social Media Icons */}
-      <div className="flex gap-6 lg:gap-8 items-center justify-center lg:justify-end text-black">
-        
-        <a href="/" target="_blank" >
-          <FaFacebook size={20} /></a>
-
-        <a href="/" target="_blank" >
-          <FaInstagram size={20} /></a>
-
-        <a href="/" target="_blank" >
-          <FaTwitter size={20} /></a>
-
-        <a href="/" target="_blank" >
-          <FaLinkedin size={20} /></a>
-      </div>
-
-
-
-
-
     </div>
   )
 }
-
-
-
-
-
-
-
-
-
-
-
-
