@@ -11,7 +11,7 @@ export default function Page() {
       {/* Hero Section */}
       <section className="flex flex-col justify-center min-h-screen bg-green-500 text-center transition-colors duration-300 ease-in-out hover:bg-green-600 px-4 py-16">
         <h1 className="text-4xl md:text-6xl lg:text-8xl font-extrabold drop-shadow-xl animate-bounce">
-          HEY, I'M ALI HAMZA
+          HEY, IaM ALI HAMZA
         </h1>
         <span className="text-2xl md:text-3xl lg:text-4xl mt-4">FRONT-END DEVELOPER</span>
       </section>
@@ -26,9 +26,9 @@ export default function Page() {
         
         <div className="max-w-4xl mx-auto">
           <p className="text-lg md:text-xl font-medium leading-relaxed border-l-4 border-green-400 pl-4 p-7">
-            I'm <span className="text-green-400 font-semibold">Ali Hamza</span>, a new developer who knows HTML, CSS, TypeScript, 
-            Nextjs and Tailwind css. I'm still learning and getting better at building websites. Right now, I'm enrolled in a course at Government
-            House, where I'm learning more skills to improve my work. I enjoy working on creative projects and love exploring new ways to make my
+            Im <span className="text-green-400 font-semibold">Ali Hamza</span>, a new developer who knows HTML, CSS, TypeScript, 
+            Nextjs and Tailwind css. Im still learning and getting better at building websites. Right now, Im enrolled in a course at Government
+            House, where Im learning more skills to improve my work. I enjoy working on creative projects and love exploring new ways to make my
             websites better and more responsive.
           </p>
         </div>
@@ -94,7 +94,7 @@ export default function Page() {
               </div>
               
               <p className="text-lg md:text-xl font-medium mt-6 pb-6">
-                I created a website named "Mr. Foodie" to showcase my skills, featuring a menu bar, header, footer, and a hero section with food images. It also includes a fast food menu.
+                I created a website named Mr. Foodie to showcase my skills, featuring a menu bar, header, footer, and a hero section with food images. It also includes a fast food menu.
                 <br /><br />
                 <a 
                   href="https://foodie-com-website2.vercel.app/" 
