@@ -14,14 +14,14 @@ export default function Footer() {
           <span className="text-9xl text-green-400">A</span>BOUT <span className="text-white">US</span>
         </h2>
         <p className="text-xl font-medium  mx-auto border-l-4 border-green-400 p-3">
-          Welcome to my <span className='text-1xl text-green-400 font-semibold'>PORTFOLIO</span> website! This platform showcases my skills and projects as a developer.<br/> Here, you'll find a collection of my work, including web development projects and design creations, <br/>highlighting my journey and expertise in the field.
+          Welcome to my <span className='text-1xl text-green-400 font-semibold'>PORTFOLIO</span> website! This platform showcases my skills and projects as a developer.<br/> Here, you will find a collection of my work, including web development projects and design creations, <br/>highlighting my journey and expertise in the field.
         </p>
        
     
       </section>
 <section>
   <h1 className='text-green-400 text-3xl font-black   text-right mr-10 mt-36'>FOR CONTACT</h1>
-  <p className='text-lg text-right m-7'>  If you have any questions, feel free to contact me.<br/> I'm always open to work and new ideas. You can email me at: 
+  <p className='text-lg text-right m-7'>  If you have any questions, feel free to contact me.<br/> Iam always open to work and new ideas. You can email me at: 
   </p> 
   
   
