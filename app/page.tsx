@@ -40,7 +40,7 @@ export default function Page() {
       <section id="project" className="px-4 md:px-6 py-10 bg-teal-900 text-center border-y-2">
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-black mb-8">
           <span className="text-3xl sm:text-6xl md:text-7xl lg:text-9xl text-green-400">MY</span>PROJECTS
-          <span className="text-6xl md:text-7xl lg:text-9xl text-green-400">MY</span>PROJECTS
+          
         </h2>
         
         <div className="border-t-4 border-green-400 my-8" />
